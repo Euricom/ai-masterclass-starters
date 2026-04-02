@@ -11,16 +11,15 @@
   },
   "workspaces": [
     "packages/web-react",
+    "packages/web-tanstack-start",
     "packages/web-ng"
   ],
   "scripts": {
-    "dev": "bun run --filter 'web' dev",
-    "lint": "bun run --filter 'web' lint",
-    "lint:fix": "bun run --filter 'web' lint:fix",
-    "fmt": "bun run --filter 'web' fmt",
-    "fmt:check": "bun run --filter 'web' fmt:check",
-    "check": "bun run --filter 'web' check",
+    "dev:ng": "bun run --filter 'web-ng' dev",
+    "dev:react": "bun run --filter 'web-react' dev",
+    "dev:tanstack": "bun run --filter 'web-tanstack-start' dev",
     "dev:api": "dotnet watch run --project packages/api",
+    "check": "bun run --filter '*' check",
     "test:api": "dotnet test packages/api.tests",
     "test:api:int": "dotnet test packages/api.tests.integration",
     "cleanup": "bun run --filter '*' cleanup"

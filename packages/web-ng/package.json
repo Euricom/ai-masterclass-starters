@@ -8,10 +8,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "vp lint",
-    "lint:fix": "vp lint --fix",
-    "fmt": "vp fmt . --write",
-    "fmt:check": "vp fmt --check",
     "check": "vp check",
     "cleanup": "rimraf dist .angular",
     "gen:api": "ng-openapi-gen"

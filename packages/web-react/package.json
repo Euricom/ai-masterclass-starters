@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "web-react",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -7,10 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "vp lint",
-    "lint:fix": "vp lint --fix",
-    "fmt": "vp fmt . --write",
-    "fmt:check": "vp fmt --check",
     "check": "vp check",
     "test": "vitest run",
     "gen:api": "npx openapi-typescript http://localhost:5204/openapi/v1.json -o ./src/api/schema.d.ts",
