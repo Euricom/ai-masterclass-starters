@@ -28,7 +28,10 @@ export class ApiService extends BaseService {
    *
    * This method doesn't expect any request body.
    */
-  get$Response(params?: Get$Params, context?: HttpContext): Promise<StrictHttpResponse<AnonymousTypeOfstringAndstring>> {
+  get$Response(
+    params?: Get$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<AnonymousTypeOfstringAndstring>> {
     const obs = get(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -41,7 +44,9 @@ export class ApiService extends BaseService {
    */
   get(params?: Get$Params, context?: HttpContext): Promise<AnonymousTypeOfstringAndstring> {
     const resp = this.get$Response(params, context);
-    return resp.then((r: StrictHttpResponse<AnonymousTypeOfstringAndstring>): AnonymousTypeOfstringAndstring => r.body);
+    return resp.then(
+      (r: StrictHttpResponse<AnonymousTypeOfstringAndstring>): AnonymousTypeOfstringAndstring =>
+        r.body,
+    );
   }
-
 }

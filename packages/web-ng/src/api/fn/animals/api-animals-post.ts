@@ -10,22 +10,25 @@ import { RequestBuilder } from '../../request-builder';
 import { CreateAnimalRequest } from '../../models/create-animal-request';
 
 export interface ApiAnimalsPost$Params {
-      body: CreateAnimalRequest
+  body: CreateAnimalRequest;
 }
 
-export function apiAnimalsPost(http: HttpClient, rootUrl: string, params: ApiAnimalsPost$Params, context?: HttpContext): Observable<StrictHttpResponse<void>> {
+export function apiAnimalsPost(
+  http: HttpClient,
+  rootUrl: string,
+  params: ApiAnimalsPost$Params,
+  context?: HttpContext,
+): Observable<StrictHttpResponse<void>> {
   const rb = new RequestBuilder(rootUrl, apiAnimalsPost.PATH, 'post');
   if (params) {
     rb.body(params.body, 'application/json');
   }
 
-  return http.request(
-    rb.build({ responseType: 'text', accept: '*/*', context })
-  ).pipe(
+  return http.request(rb.build({ responseType: 'text', accept: '*/*', context })).pipe(
     filter((r: any): r is HttpResponse<any> => r instanceof HttpResponse),
     map((r: HttpResponse<any>) => {
       return (r as HttpResponse<any>).clone({ body: undefined }) as StrictHttpResponse<void>;
-    })
+    }),
   );
 }
 

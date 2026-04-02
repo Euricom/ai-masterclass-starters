@@ -9,21 +9,23 @@ import { RequestBuilder } from '../../request-builder';
 
 import { AnonymousTypeOfstringAndstring } from '../../models/anonymous-type-ofstring-andstring';
 
-export interface Get$Params {
-}
+export interface Get$Params {}
 
-export function get(http: HttpClient, rootUrl: string, params?: Get$Params, context?: HttpContext): Observable<StrictHttpResponse<AnonymousTypeOfstringAndstring>> {
+export function get(
+  http: HttpClient,
+  rootUrl: string,
+  params?: Get$Params,
+  context?: HttpContext,
+): Observable<StrictHttpResponse<AnonymousTypeOfstringAndstring>> {
   const rb = new RequestBuilder(rootUrl, get.PATH, 'get');
   if (params) {
   }
 
-  return http.request(
-    rb.build({ responseType: 'json', accept: 'application/json', context })
-  ).pipe(
+  return http.request(rb.build({ responseType: 'json', accept: 'application/json', context })).pipe(
     filter((r: any): r is HttpResponse<any> => r instanceof HttpResponse),
     map((r: HttpResponse<any>) => {
       return r as StrictHttpResponse<AnonymousTypeOfstringAndstring>;
-    })
+    }),
   );
 }
 

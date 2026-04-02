@@ -11,23 +11,26 @@ import { UpdateAnimalRequest } from '../../models/update-animal-request';
 
 export interface ApiAnimalsIdPut$Params {
   id: number;
-      body: UpdateAnimalRequest
+  body: UpdateAnimalRequest;
 }
 
-export function apiAnimalsIdPut(http: HttpClient, rootUrl: string, params: ApiAnimalsIdPut$Params, context?: HttpContext): Observable<StrictHttpResponse<void>> {
+export function apiAnimalsIdPut(
+  http: HttpClient,
+  rootUrl: string,
+  params: ApiAnimalsIdPut$Params,
+  context?: HttpContext,
+): Observable<StrictHttpResponse<void>> {
   const rb = new RequestBuilder(rootUrl, apiAnimalsIdPut.PATH, 'put');
   if (params) {
     rb.path('id', params.id, {});
     rb.body(params.body, 'application/json');
   }
 
-  return http.request(
-    rb.build({ responseType: 'text', accept: '*/*', context })
-  ).pipe(
+  return http.request(rb.build({ responseType: 'text', accept: '*/*', context })).pipe(
     filter((r: any): r is HttpResponse<any> => r instanceof HttpResponse),
     map((r: HttpResponse<any>) => {
       return (r as HttpResponse<any>).clone({ body: undefined }) as StrictHttpResponse<void>;
-    })
+    }),
   );
 }
 

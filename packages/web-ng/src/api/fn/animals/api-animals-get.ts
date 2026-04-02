@@ -9,21 +9,23 @@ import { RequestBuilder } from '../../request-builder';
 
 import { Animal } from '../../models/animal';
 
-export interface ApiAnimalsGet$Params {
-}
+export interface ApiAnimalsGet$Params {}
 
-export function apiAnimalsGet(http: HttpClient, rootUrl: string, params?: ApiAnimalsGet$Params, context?: HttpContext): Observable<StrictHttpResponse<Array<Animal>>> {
+export function apiAnimalsGet(
+  http: HttpClient,
+  rootUrl: string,
+  params?: ApiAnimalsGet$Params,
+  context?: HttpContext,
+): Observable<StrictHttpResponse<Array<Animal>>> {
   const rb = new RequestBuilder(rootUrl, apiAnimalsGet.PATH, 'get');
   if (params) {
   }
 
-  return http.request(
-    rb.build({ responseType: 'json', accept: 'application/json', context })
-  ).pipe(
+  return http.request(rb.build({ responseType: 'json', accept: 'application/json', context })).pipe(
     filter((r: any): r is HttpResponse<any> => r instanceof HttpResponse),
     map((r: HttpResponse<any>) => {
       return r as StrictHttpResponse<Array<Animal>>;
-    })
+    }),
   );
 }
 

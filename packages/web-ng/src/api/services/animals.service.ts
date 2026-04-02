@@ -36,7 +36,10 @@ export class AnimalsService extends BaseService {
    *
    * This method doesn't expect any request body.
    */
-  apiAnimalsGet$Response(params?: ApiAnimalsGet$Params, context?: HttpContext): Promise<StrictHttpResponse<Array<Animal>>> {
+  apiAnimalsGet$Response(
+    params?: ApiAnimalsGet$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<Array<Animal>>> {
     const obs = apiAnimalsGet(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -61,7 +64,10 @@ export class AnimalsService extends BaseService {
    *
    * This method sends `application/json` and handles request body of type `application/json`.
    */
-  apiAnimalsPost$Response(params: ApiAnimalsPost$Params, context?: HttpContext): Promise<StrictHttpResponse<void>> {
+  apiAnimalsPost$Response(
+    params: ApiAnimalsPost$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<void>> {
     const obs = apiAnimalsPost(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -86,7 +92,10 @@ export class AnimalsService extends BaseService {
    *
    * This method doesn't expect any request body.
    */
-  apiAnimalsIdGet$Response(params: ApiAnimalsIdGet$Params, context?: HttpContext): Promise<StrictHttpResponse<void>> {
+  apiAnimalsIdGet$Response(
+    params: ApiAnimalsIdGet$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<void>> {
     const obs = apiAnimalsIdGet(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -111,7 +120,10 @@ export class AnimalsService extends BaseService {
    *
    * This method sends `application/json` and handles request body of type `application/json`.
    */
-  apiAnimalsIdPut$Response(params: ApiAnimalsIdPut$Params, context?: HttpContext): Promise<StrictHttpResponse<void>> {
+  apiAnimalsIdPut$Response(
+    params: ApiAnimalsIdPut$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<void>> {
     const obs = apiAnimalsIdPut(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -136,7 +148,10 @@ export class AnimalsService extends BaseService {
    *
    * This method doesn't expect any request body.
    */
-  apiAnimalsIdDelete$Response(params: ApiAnimalsIdDelete$Params, context?: HttpContext): Promise<StrictHttpResponse<void>> {
+  apiAnimalsIdDelete$Response(
+    params: ApiAnimalsIdDelete$Params,
+    context?: HttpContext,
+  ): Promise<StrictHttpResponse<void>> {
     const obs = apiAnimalsIdDelete(this.http, this.rootUrl, params, context);
     return firstValueFrom(obs);
   }
@@ -151,5 +166,4 @@ export class AnimalsService extends BaseService {
     const resp = this.apiAnimalsIdDelete$Response(params, context);
     return resp.then((r: StrictHttpResponse<void>): void => r.body);
   }
-
 }
