@@ -1,21 +1,41 @@
-# bun-react-tailwind-shadcn-template
+# web-react
 
-To install dependencies:
+React frontend for the dotnet-spa template. Uses Vite, TypeScript, Tailwind CSS v4, shadcn/ui, and openapi-fetch to connect to the .NET API.
 
-```bash
-bun install
-```
-
-To start a development server:
+## Getting Started
 
 ```bash
-bun dev
+# from the workspace root
+bun run dev:react
+
+# or from this directory
+bun run dev
 ```
 
-To run for production:
+The dev server runs on http://localhost:5173. Make sure the API is running (`bun run dev:api` from the root).
 
-```bash
-bun start
+## Scripts
+
+| Script    | Description                        |
+| --------- | ---------------------------------- |
+| `dev`     | Start dev server                   |
+| `build`   | Production build                   |
+| `preview` | Preview production build           |
+| `test`    | Run tests with Vitest              |
+| `gen:api` | Regenerate API types from OpenAPI  |
+| `check`   | Run lint and format checks         |
+
+## Project Structure
+
 ```
-
-This project was created using `bun init` in bun v1.3.4. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+src/
+  api/              API client (openapi-fetch, generated types)
+  components/       Shared and UI components (shadcn/ui)
+  context/          React context providers
+  features/         Feature modules
+  hooks/            Custom hooks
+  lib/              Utilities
+  styles/           Global styles
+  App.tsx           Root component
+  main.tsx          Entry point
+```
