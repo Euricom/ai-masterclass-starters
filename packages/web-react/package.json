@@ -13,7 +13,8 @@
     "fmt:check": "vp fmt --check",
     "check": "vp check",
     "test": "vitest run",
-    "gen:api": "npx openapi-typescript http://localhost:5204/openapi/v1.json -o ./src/api/schema.d.ts"
+    "gen:api": "npx openapi-typescript http://localhost:5204/openapi/v1.json -o ./src/api/schema.d.ts",
+    "cleanup": "rimraf dist"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",

@@ -8,7 +8,8 @@
     "vite-plus": "^0.1.14"
   },
   "workspaces": [
-    "packages/web"
+    "packages/web-react",
+    "packages/web-ng"
   ],
   "scripts": {
     "dev": "bun run --filter 'web' dev",
@@ -20,7 +21,7 @@
     "dev:api": "dotnet watch run --project packages/api",
     "test:api": "dotnet test packages/api.tests",
     "test:api:int": "dotnet test packages/api.tests.integration",
-    "clean": "rimraf packages/web/dist packages/api*/bin packages/api*/obj"
+    "cleanup": "bun run --filter '*' cleanup"
   },
   "packageManager": "bun@1.3.6"
 }

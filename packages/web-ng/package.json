@@ -1,0 +1,44 @@
+{
+  "name": "web-ng",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "dev": "vite",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix",
+    "fmt": "vp fmt . --write",
+    "fmt:check": "vp fmt --check",
+    "check": "vp check",
+    "cleanup": "rimraf dist .angular"
+  },
+  "dependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/forms": "^21.2.0",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/router": "^21.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "vite": "^8.0.3"
+  },
+  "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^2.4.0",
+    "@angular/build": "^21.2.6",
+    "@angular/cli": "^21.2.6",
+    "@angular/compiler-cli": "^21.2.0",
+    "@nitedani/vite-plugin-angular": "^17.0.11",
+    "@tailwindcss/postcss": "^4.1.12",
+    "jsdom": "^28.0.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  },
+  "packageManager": "npm@10.9.3"
+}
