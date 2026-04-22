@@ -1,5 +1,14 @@
 ## [Unreleased]
 
+### 2026-04-22
+
+#### Changed
+- Moved `@angular/platform-browser-dynamic` from root devDependencies into `packages/web-ng` dependencies.
+
+#### Removed
+- Dropped the `web-ng` workspace entry from root devDependencies.
+- Removed the Blazor full-stack architecture section from `docs/architecture.md` (no Blazor package in the repo).
+
 ### 2026-04-20
 
 #### Added

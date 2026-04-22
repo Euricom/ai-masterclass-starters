@@ -5,7 +5,6 @@
 Following architecture can be chosen:
 
 * Single Page Application (React or Angular) + API Service (.NET/C#)
-* Full stack Blazor Application + API Service (.NET/C#)
 * Full stack React Application (TanStack Start)  + API Service (.NET/C#)
 
 ### Single Page Application
@@ -169,77 +168,6 @@ root/                              # repo root
 ├── vite.config.ts                 # vite-plus config (OXLint + OXFmt wrapper)
 ├── package.json                   # Bun workspaces (web packages)
 └── bun.lock
-```
-
-### Full Stack Blazor Application
-
-*Planned architecture — no Blazor package currently exists in the repo.*
-
-<img src="./images/architecture-blazor.excalidraw.png" alt="Architecture" width="500" height="500">
-
-**Frontend: Blazor**
-
-- C# & Dotnet 10
-- Components library with [MudBlazor](https:
-- Styling with MudBlazor's build in styles
-- Entity Framework Core for DB access
-- Dependency Injection
-- Authentication with Azure Entra ID with Autorization flow with PKCE
-
-```bash
-BlazorApp/
-├── Features/            # Domain-specific
-│   ├── Dashboard/
-│   │   ├── Pages/
-│   │   │   └── Index.razor
-│   │   ├── Components/
-│   │   └── Services/
-│   └── User/
-├── Data/                # Services, mocks
-│   └── WeatherForecastService.cs
-├── wwwroot/             # CSS, JS, images
-├── App.razor            # Root <Router>
-├── Program.cs           # Services, render modes
-├── MyBlazorApp.csproj
-└── appsettings.json
-```
-
-**API Service**
-
-- C# & .NET 10+
-- ASP.NET Core Web API: Minimal APIs for endpoints
-- Entity Framework Core
-- PostgreSQL as database (running on Docker)
-- Dependency Injection
-- Swagger / OpenAPI enabled for documented API endpoints
-- Cors Policies to allow the front-end to access the API
-
-**Global**
-- Monorepo setup with packages/client & packages/api
-- Shared contracts (DTOs/interfaces) in a shared project consumed by both Blazor and API for type safety
-
-```bash
-root/                                   # Git root
-├── src/
-│   ├── MySolution.Shared/              # Shared contracts (DTOs/interfaces)
-│   │   ├── Dtos/
-│   │   │   └── TodoDto.cs
-│   │   ├── Enums/
-│   │   ├── Constants/
-│   |   └── MySolution.Shared.csproj
-|   ├── MySolution.Api/                 # API Service
-│   │   ├── Features/
-│   │   ├── Program.cs
-│   │   └── MySolution.Api.csproj
-│   └── MySolution.App/                 # Blazor Application
-│   │   ├── Features/
-│   │   ├── Program.cs
-│   │   └── MySolution.Blazor.csproj
-├── tests/
-│   ├── MySolution.Shared.Tests/
-│   ├── MySolution.Api.Tests/
-│   └── MySolution.App.Tests/
-└── MySolution.sln
 ```
 
 ### Full Stack React Application
