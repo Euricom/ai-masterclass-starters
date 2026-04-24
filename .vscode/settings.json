@@ -10,5 +10,8 @@
   },
   "files.readonlyInclude": {
     "**/routeTree.gen.ts": true
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   }
 }

@@ -9,34 +9,34 @@ public static class AnimalEndpoints
     {
         var group = app.MapApiGroup("animals");
 
-        group.MapGet("/", (AnimalService service) =>
-            TypedResults.Ok(service.GetAll()));
+        group.MapGet("/", async (AnimalService service, CancellationToken ct) =>
+            TypedResults.Ok(await service.GetAllAsync(ct)));
 
-        group.MapGet("/{id:int}", (int id, AnimalService service) =>
+        group.MapGet("/{id:int}", async (int id, AnimalService service, CancellationToken ct) =>
         {
-            var animal = service.GetById(id);
+            var animal = await service.GetByIdAsync(id, ct);
             return animal is not null
                 ? Results.Ok(animal)
                 : Results.NotFound();
         });
 
-        group.MapPost("/", (CreateAnimalRequest request, AnimalService service) =>
+        group.MapPost("/", async (CreateAnimalRequest request, AnimalService service, CancellationToken ct) =>
         {
-            var animal = service.Create(request);
+            var animal = await service.CreateAsync(request, ct);
             return Results.Created($"/api/animals/{animal.Id}", animal);
         }).AddEndpointFilter<ValidationFilter<CreateAnimalRequest>>();
 
-        group.MapPut("/{id:int}", (int id, UpdateAnimalRequest request, AnimalService service) =>
+        group.MapPut("/{id:int}", async (int id, UpdateAnimalRequest request, AnimalService service, CancellationToken ct) =>
         {
-            var animal = service.Update(id, request);
+            var animal = await service.UpdateAsync(id, request, ct);
             return animal is not null
                 ? Results.Ok(animal)
                 : Results.NotFound();
         }).AddEndpointFilter<ValidationFilter<UpdateAnimalRequest>>();
 
-        group.MapDelete("/{id:int}", (int id, AnimalService service) =>
+        group.MapDelete("/{id:int}", async (int id, AnimalService service, CancellationToken ct) =>
         {
-            return service.Delete(id)
+            return await service.DeleteAsync(id, ct)
                 ? Results.NoContent()
                 : Results.NotFound();
         });
