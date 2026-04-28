@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+### 2026-04-24
+
+#### Added
+- `api`: migrated the Animals module from an in-memory list to SQLite via EF Core.
+
+#### Chore
+- Added SQLite database files to `.gitignore`.
+
 ### 2026-04-22
 
 #### Changed
@@ -12,8 +20,12 @@
 ### 2026-04-20
 
 #### Added
-- PRD for the Timesheet Zone feature (`docs/`).
+- Timesheet Zone PRD and implementation plan (`docs/`).
 - Architecture and requirements documentation (`docs/`).
+- Claude product development workflow skills.
+
+#### Removed
+- Unused `@analogjs/vite-plugin-angular` dependency from `web-ng`.
 
 ### 2026-04-02
 
