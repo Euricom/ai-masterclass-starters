@@ -15,16 +15,35 @@ Follow the steps below to install you AI powered workstation.
 [Claude Code Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-claude-code.md)
 [Tools](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-tools.md)
 
-## Euricom Tools to install
+## Tools to install
 
-| Tool                   | Description                 | Link                                         |
-| ---------------------- | --------------------------- | -------------------------------------------- |
-| **Slack**              | Microsoft Teams alternative | https://slack.com/downloads                  |
-| **Office365**          | Microsoft Office            | https://m365.cloud.microsoft/apps            |
-| **Chrome**             | Chrome Browser              | https://www.google.com/intl/en_uk/chrome     |
-| **Visual Studio 2026** | Community Edition Insider   | https://visualstudio.microsoft.com/insiders/ |
-| **Rider**              | Alternative C# Dev          | https://www.jetbrains.com/rider/download     |
+AI Tools
 
+| AI Agents           | Description                       | Link                         |
+| ------------------- | --------------------------------- | ---------------------------- |
+| **Claude**          | Chat, Claude Code, CoWork, Design | https://claude.ai            |
+| **Chatgpt**         | Chat, Codex                       | https://chatgpt.com/         |
+| **Github Copilot**  | VSCode                            |                              |
+| **Claude API keys** | AI API Keys                       | https://platform.claude.com/ |
+
+Office/Dev Tools
+
+| Tool          | Description                 | Link                                     |
+| ------------- | --------------------------- | ---------------------------------------- |
+| **VSCode**    | Code Editor                 | https://code.visualstudio.com/           |
+| **Slack**     | Microsoft Teams alternative | https://slack.com/downloads              |
+| **Office365** | Microsoft Office            | https://m365.cloud.microsoft/apps        |
+| **Chrome**    | Chrome Browser              | https://www.google.com/intl/en_uk/chrome |
+| **Obsidian**  | Note taking                 | https://obsidian.md/                     |
+| **WezTerm**   | Terminal                    | https://wezfurlong.org/wezterm/          |
+
+Add-ons
+
+| Add-on        | Description          | Link                                      |
+| ------------- | -------------------- | ----------------------------------------- |
+| **CodexBar**  | Claude, Github usage | https://github.com/Finesssee/Win-CodexBar |
+| **WisprFlow** | Voice to text        | https://wisprflow.com/                    |
+| **Typeless**  | Voice to text        | https://www.typeless.com/                 |
 
 ## Install Masterclass git repo
 
