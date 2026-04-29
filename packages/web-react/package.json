@@ -9,19 +9,21 @@
     "preview": "vite preview",
     "check": "vp check",
     "test": "vitest run",
-    "gen:api": "npx openapi-typescript http://localhost:5204/openapi/v1.json -o ./src/api/schema.d.ts",
+    "gen:api": "npx openapi-typescript http://localhost:5204/openapi/v1.json -o ./src/api/schema.ts",
     "cleanup": "rimraf dist"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-slot": "^1.2.3",
+    "@tanstack/react-query": "^5.100.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.545.0",
     "openapi-fetch": "^0.17.0",
     "react": "^19",
     "react-dom": "^19",
+    "react-router-dom": "^7.14.2",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

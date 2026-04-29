@@ -1,28 +1,23 @@
-import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import './styles/index.css';
-
-import reactLogo from './react.svg';
+import { NavLink, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Animals } from './pages/Animals';
+import './styles.css';
 
 export function App() {
   return (
-    <div className="container mx-auto p-8 text-center relative z-10">
-      <div className="flex justify-center items-center gap-8 mb-8">
-        <img
-          src={reactLogo}
-          alt="React Logo"
-          className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa] [animation:spin_20s_linear_infinite]"
-        />
-      </div>
-      <Card>
-        <CardHeader className="gap-4">
-          <CardTitle className="text-3xl font-bold">Vite + React</CardTitle>
-          <CardDescription>
-            Edit{' '}
-            <code className="rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono">src/App.tsx</code>{' '}
-            and save to test HMR
-          </CardDescription>
-        </CardHeader>
-      </Card>
+    <div className="mx-auto max-w-3xl p-6">
+      <nav className="mb-6 flex gap-4 text-sm">
+        <NavLink to="/" end className={({ isActive }) => (isActive ? 'font-bold' : '')}>
+          Home
+        </NavLink>
+        <NavLink to="/animals" className={({ isActive }) => (isActive ? 'font-bold' : '')}>
+          Animals
+        </NavLink>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/animals" element={<Animals />} />
+      </Routes>
     </div>
   );
 }
