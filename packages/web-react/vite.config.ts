@@ -15,8 +15,5 @@ export default defineConfig({
   },
   lint: {
     ignorePatterns: ['dist/**'],
-  },
-  fmt: {
-    singleQuote: true,
-  },
+  }
 });

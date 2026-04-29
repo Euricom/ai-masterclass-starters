@@ -1,3 +1,4 @@
+// fallow-ignore-file
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 

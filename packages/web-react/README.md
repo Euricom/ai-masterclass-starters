@@ -16,14 +16,14 @@ The dev server runs on http://localhost:5173. Make sure the API is running (`bun
 
 ## Scripts
 
-| Script    | Description                        |
-| --------- | ---------------------------------- |
-| `dev`     | Start dev server                   |
-| `build`   | Production build                   |
-| `preview` | Preview production build           |
-| `test`    | Run tests with Vitest              |
-| `gen:api` | Regenerate API types from OpenAPI  |
-| `check`   | Run lint and format checks         |
+| Script    | Description                       |
+| --------- | --------------------------------- |
+| `dev`     | Start dev server                  |
+| `build`   | Production build                  |
+| `preview` | Preview production build          |
+| `test`    | Run tests with Vitest             |
+| `gen:api` | Regenerate API types from OpenAPI |
+| `check`   | Run lint and format checks        |
 
 ## Project Structure
 

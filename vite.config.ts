@@ -6,5 +6,6 @@ export default defineConfig({
   },
   fmt: {
     singleQuote: true,
+    printWidth: 120,
   },
 });

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fallow-rs/fallow/main/schema.json",
+  "entry": [
+    "src/index.{ts,tsx,js,jsx}",
+    "src/main.{ts,tsx,js,jsx}"
+  ],
+  "ignorePatterns": [
+    "**/api/**",
+    "**/.angular/**",
+    "**/web-ng/src/api/**",
+    "**/web-react/src/components/ui/**"
+  ],
+  "ignoreDependencies": [
+    "@angular/forms",
+    "@radix-ui/react-label",
+    "@radix-ui/react-select",
+    "@radix-ui/react-slot",
+    "lucide-react",
+    "@tanstack/react-query-devtools",
+    "@tanstack/react-devtools",
+    "@tanstack/router-plugin",
+    "class-variance-authority",
+    "openapi-fetch"
+  ],
+  "rules": {
+    "unused-dependencies": "warn",
+    "unused-files": "error",
+    "unused-exports": "warn",
+    "unused-types": "off"
+  }
+}
