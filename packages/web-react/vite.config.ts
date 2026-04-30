@@ -14,6 +14,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5204',
+        changeOrigin: true,
+      },
+    },
+  },
   lint: {
     ignorePatterns: ['dist/**'],
   },
