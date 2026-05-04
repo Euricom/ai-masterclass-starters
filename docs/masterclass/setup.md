@@ -56,18 +56,19 @@ Pick one of the following terminals:
 
 **CLI Tools**
 
-| Tool        | Description                  | Link                                                                                 |
-| ----------- | ---------------------------- | ------------------------------------------------------------------------------------ |
-| **jq ***    | json processor               | [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)                     |
-| **gh ***    | github cli                   | [https://cli.github.com/](https://cli.github.com/)                                   |
-| **uv ***    | Python package manager       | [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)                             |
-| **zoxide**  | fuzzy file system navigation | [https://github.com/ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide)       |
-| **eza**     | ls alternative               | [https://github.com/eza-community/eza](https://github.com/eza-community/eza)         |
-| **yazi**    | file manager                 | [https://github.com/sxyazi/yazi](https://github.com/sxyazi/yazi)                     |
-| **glow**    | markdown reader              | [https://github.com/charmbracelet/glow](https://github.com/charmbracelet/glow)       |
-| **lazygit** | git client                   | [https://github.com/jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) |
-| **tmux**    | terminal multiplexer         | [https://github.com/tmux/tmux](https://github.com/tmux/tmux)                         |
-| **just**    | command runner               | [https://github.com/casey/just](https://github.com/casey/just)                       |
+| Tool           | Description                  | Link                                                                                 |
+| -------------- | ---------------------------- | ------------------------------------------------------------------------------------ |
+| **jq ***       | json processor               | [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)                     |
+| **gh ***       | github cli                   | [https://cli.github.com/](https://cli.github.com/)                                   |
+| **uv ***       | Python package manager       | [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)                             |
+| **zoxide**     | fuzzy file system navigation | [https://github.com/ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide)       |
+| **eza**        | ls alternative               | [https://github.com/eza-community/eza](https://github.com/eza-community/eza)         |
+| **yazi**       | file manager                 | [https://github.com/sxyazi/yazi](https://github.com/sxyazi/yazi)                     |
+| **glow**       | markdown reader              | [https://github.com/charmbracelet/glow](https://github.com/charmbracelet/glow)       |
+| **lazygit**    | git client                   | [https://github.com/jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) |
+| **tmux**       | terminal multiplexer         | [https://github.com/tmux/tmux](https://github.com/tmux/tmux)                         |
+| **just**       | command runner               | [https://github.com/casey/just](https://github.com/casey/just)                       |
+| **markitdown** | docx, pdf, ... -> markdown   | [https://github.com/microsoft/markitdown](https://github.com/microsoft/markitdown)   |
 
 ## Install Masterclass git repo
 
