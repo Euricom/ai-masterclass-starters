@@ -13,4 +13,8 @@
 - [Plan](docs/app/plan.md)
 - [Packages](packages/README.md)
 
+## Extra Training Materials
+
+- [Additional Training Materials](docs/masterclass/training-extra.md)
+
 

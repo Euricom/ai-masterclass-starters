@@ -2,31 +2,48 @@
 
 # Euricom Competence Model
 
-[AI Information Worker](https://github.com/Euricom/ai-masterclass/blob/main/vault/content/00_foundations/01-setup/sections/competency.md)
+[AI Information Worker](https://github.com/Euricom/ai-masterclass/blob/main/content/01.%20setup/competency.md)
 
 # Laptop Setup
 
 Follow the steps below to install you AI powered workstation.
 
-[Shell Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-shell.md)
-[VSCode Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-vscode.md)
-[Git Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-git.md)
-[Node Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-node.md)
-[Claude Code Setup](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-claude-code.md)
-[Tools](https://github.com/Euricom/ai-masterclass/tree/main/vault/content/00_foundations/01-setup/sections/setup-tools.md)
+[Basic Laptop Setup](https://github.com/Euricom/ai-masterclass/blob/main/content/01.%20setup/laptop.md)
 
-## Tools to install
+## Extra Tools to install
 
-AI Tools
+**AI Tools**
 
-| AI Agents           | Description                       | Link                         |
-| ------------------- | --------------------------------- | ---------------------------- |
-| **Claude**          | Chat, Claude Code, CoWork, Design | https://claude.ai            |
-| **Chatgpt**         | Chat, Codex                       | https://chatgpt.com/         |
-| **Github Copilot**  | VSCode                            |                              |
-| **Claude API keys** | AI API Keys                       | https://platform.claude.com/ |
+| AI Agents          | Description                         | Link                                      |
+| ------------------ | ----------------------------------- | ----------------------------------------- |
+| **Claude**         | Chat, Claude Code, CoWork, Design   | https://claude.ai                         |
+| **Chatgpt**        | Chat, Codex                         | https://chatgpt.com/                      |
+| **Github Copilot** | VSCode                              | get invited via github                    |
+| **WisprFlow**      | Voice to text                       | https://wisprflow.com/                    |
+| **Typeless**       | Voice to text                       | https://www.typeless.com/                 |
+| **CodexBar (Mac)** | Claude, Cursor, Codex, Github usage | https://codexbar.app/                     |
+| **CodexBar (Win)** | Claude, Cursor, Codex, Github usage | https://github.com/Finesssee/Win-CodexBar |
 
-Office/Dev Tools
+**AI Credits**
+
+| Provider            | Description       | Link                         |
+| ------------------- | ----------------- | ---------------------------- |
+| **Claude API keys** | Anthropic Credits | https://platform.claude.com/ |
+
+**CLI Tools**
+
+| Tool        | Description                  | Link                                     |
+| ----------- | ---------------------------- | ---------------------------------------- |
+| **jq**      | json processor               | https://stedolan.github.io/jq/           |
+| **gh**      | github cli                   | https://cli.github.com/                  |
+| **zoxide**  | fuzzy file system navigation | https://github.com/ajeetdsouza/zoxide    |
+| **eza**     | ls alternative               | https://github.com/eza-community/eza     |
+| **yazi**    | file manager                 | https://github.com/sxyazi/yazi           |
+| **glow**    | markdown reader              | https://github.com/charmbracelet/glow    |
+| **lazygit** | git client                   | https://github.com/jesseduffield/lazygit |
+| **tmux**    | terminal multiplexer         | https://github.com/tmux/tmux             |
+
+**Office/Dev Tools**
 
 | Tool          | Description                 | Link                                     |
 | ------------- | --------------------------- | ---------------------------------------- |
@@ -36,14 +53,6 @@ Office/Dev Tools
 | **Chrome**    | Chrome Browser              | https://www.google.com/intl/en_uk/chrome |
 | **Obsidian**  | Note taking                 | https://obsidian.md/                     |
 | **WezTerm**   | Terminal                    | https://wezfurlong.org/wezterm/          |
-
-Add-ons
-
-| Add-on        | Description          | Link                                      |
-| ------------- | -------------------- | ----------------------------------------- |
-| **CodexBar**  | Claude, Github usage | https://github.com/Finesssee/Win-CodexBar |
-| **WisprFlow** | Voice to text        | https://wisprflow.com/                    |
-| **Typeless**  | Voice to text        | https://www.typeless.com/                 |
 
 ## Install Masterclass git repo
 
