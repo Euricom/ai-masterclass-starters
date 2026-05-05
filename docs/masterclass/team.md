@@ -26,10 +26,15 @@
 
 #### Christhopher Ras
 - christhopher.ras@euri.com
+- https://github.com/cmdras
+
 
 #### Pieter Bracke
 - pieter.bracke@euri.com
+- https://github.com/pieter-1337
+
 
 #### Gianni Claes
 - gianni.claes@euri.com
+- https://github.com/gianni-euricom
 
